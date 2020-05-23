@@ -11,6 +11,8 @@ import {
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import '../node_modules/vuetify/dist/vuetify.css'
+
 import _448fd6dd from '../layouts/default 2.vue'
 import _6f6c098b from '../layouts/default.vue'
 

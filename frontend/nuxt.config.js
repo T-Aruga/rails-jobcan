@@ -37,15 +37,12 @@ const config = {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
-  ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -55,7 +52,11 @@ const config = {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'		// 追記
+    '@nuxtjs/proxy'	,
+  ],
+
+  plugins: [
+    'plugins/vuetify'
   ],
 
   generate: {
