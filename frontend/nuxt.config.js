@@ -1,5 +1,5 @@
 
-export default {
+const config = {
   server: {
     port: 8000,
   },
@@ -53,6 +53,11 @@ export default {
   axios: {
   },
 
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'		// 追記
+  ],
+
   generate: {
     dir: '../public'
   },
@@ -67,3 +72,9 @@ export default {
     }
   }
 }
+
+if (process.env.NODE_ENV === 'development') {
+  config.proxy = { '/api': 'http://localhost:3000' }
+}
+
+export default config
