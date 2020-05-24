@@ -13,7 +13,7 @@ https://rails-jobcan.herokuapp.com/
 
 ## 使用技術
 
-* Ruby 2.5.0, Rails 5.2.
+* Ruby 2.5.0, Rails 5.2.4
 * nuxt
 * Puma
 * heroku
