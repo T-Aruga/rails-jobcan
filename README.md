@@ -1,24 +1,22 @@
-# README
+# jobcan-clone
+日々の勤怠を記録、確認できるアプリです
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## リンク
+https://rails-jobcan.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
+## 設計書リンク
 
-* System dependencies
+* 機能詳細　https://drive.google.com/file/d/1LwDoFFaIKBqrkvRKksuITztQsZo-3LgW/view?usp=sharing
+* ER図 https://drive.google.com/file/d/1s3MokpvprM-vPtRkq_dXZdMCEY66vMjA/view?usp=sharing
 
-* Configuration
 
-* Database creation
+## 使用技術
 
-* Database initialization
+* Ruby 2.5.0, Rails 5.2.
+* nuxt
+* Puma
+* heroku
+* SASS, vuetify
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 画面サンプル
