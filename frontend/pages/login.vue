@@ -45,16 +45,11 @@
 
 <script>
 export default {
-  data () {
-    return {
-      password: '',
-      email: ''
-    }
+  fetch ({ store }) {
+    store.dispatch('userLogin', true)
   },
-  methods: {
-    // login () {
-    //   this.$axios.post('/api/v1/sign_in').then(res => (this.msg = res.msg))
-    // }
+  created () {
+    this.$router.replace('/')
   }
 }
 </script>

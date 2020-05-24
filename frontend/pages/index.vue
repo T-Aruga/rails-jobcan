@@ -25,12 +25,21 @@
           <v-icon>fas fa-circle-notch fa-spin</v-icon>
         </v-row>
       </v-col>
+
+      <v-col cols="12">
+        <nuxt-link to="/logout">
+          ログアウト
+        </nuxt-link>
+      </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
 export default {
+  layout ({ store }) {
+    return store.state.loggedIn ? 'default' : 'home'
+  },
   data: () => ({
     msg: ''
   }),

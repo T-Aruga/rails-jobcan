@@ -13,5 +13,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'no-console': 'warn', // 追記
+    'vue/no-unused-components': 'warn'  // 追記
   }
 }
