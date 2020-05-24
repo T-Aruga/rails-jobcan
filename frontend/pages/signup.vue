@@ -63,11 +63,13 @@ export default {
     signup () {
       if (this.$refs.form.validate()) {
         this.loading = true
-        alert(
-          `email: ${this.email}\n` +
-          `password: ${this.password}\n` +
-          'これらをRailsに送信してuserを作成します'
-        )
+        this.$axios.$post('/api/v1/users')
+          .then((res) => {
+            console.log(res)
+          }).catch((error) => {
+            console.error(error)
+            window.alert(error)
+          })
         setTimeout(() => {
           this.loading = false
           this.$refs.form.reset() // form clear

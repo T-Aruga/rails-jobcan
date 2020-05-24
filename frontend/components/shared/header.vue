@@ -36,7 +36,7 @@ export default {
   data: () => ({
     appName: process.env.APP_NAME,
     links: [
-      { title: '新規会員', to: '/signup' },
+      { title: 'ユーザ追加', to: '/signup' },
       { title: 'ログイン', to: '/login' }
     ]
   })

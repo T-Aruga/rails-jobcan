@@ -47,7 +47,7 @@ const config = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL	|| '/'
+    baseURL: process.env.BASE_URL	|| 'http://localhost:3000'
   },
 
   modules: [
@@ -106,7 +106,7 @@ const config = {
 
 if (process.env.NODE_ENV === 'development') {
   config.buildModules.push('@nuxtjs/eslint-module')
-  config.axios = { baseURL: 'http:localhost:3000' }
+  // config.axios = { baseURL: 'http:localhost:3000' }
   config.proxy = { '/api': 'http://localhost:3000' }
 }
 

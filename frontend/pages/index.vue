@@ -11,7 +11,7 @@
           color="primary"
           @click="getMsg"
         >
-          Click Me!!
+          打刻します
         </v-btn>
       </v-col>
 
@@ -24,12 +24,6 @@
           <v-icon>fas fa-tachometer-alt</v-icon>
           <v-icon>fas fa-circle-notch fa-spin</v-icon>
         </v-row>
-      </v-col>
-
-      <v-col cols="12">
-        <nuxt-link to="/logout">
-          ログアウト
-        </nuxt-link>
       </v-col>
     </v-row>
   </v-container>

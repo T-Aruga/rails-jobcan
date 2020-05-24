@@ -1,10 +1,11 @@
 <template>
   <v-app>
     <Header />
-    <v-content>
-     ようこそjobcanへ！！
-    </v-content>
-    このページはログイン前のレイアウト「home.vue」が使用されています。
+    <v-container fluid fill-height>
+      <v-content>
+       ようこそjobcanへ！！
+      </v-content>
+    </v-container>
     <Footer />
   </v-app>
 </template>

@@ -1,7 +1,6 @@
 class User < ApplicationRecord
   before_validation :downcase_email
 
-  # password hashing
   has_secure_password
 
   # validates
