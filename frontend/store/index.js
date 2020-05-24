@@ -1,7 +1,8 @@
+export const strict = false
+
 export const state = () => ({
   loggedIn: false
 })
-
 
 export const mutations = {
   setLogin (state, payload) {
@@ -9,9 +10,8 @@ export const mutations = {
   }
 }
 
-
 export const actions = {
-	userLogin ({ commit }, payload) {
-		commit('setLogin', payload)
+  userLogin (context, payload) {
+    context.commit('setLogin', payload)
   }
 }

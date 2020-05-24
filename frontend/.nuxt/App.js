@@ -13,10 +13,10 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/vuetify/dist/vuetify.css'
 
-import _448fd6dd from '../layouts/default 2.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _2d2495d5 from '../layouts/home.vue'
 
-const layouts = { "_default 2": sanitizeComponent(_448fd6dd),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_home": sanitizeComponent(_2d2495d5) }
 
 export default {
   render (h, props) {
