@@ -1,0 +1,11 @@
+$black: rgba(0, 0, 0, 0.87);
+
+
+body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+a.link-black {
+  color: $black !important;
+  text-decoration: none;
+}

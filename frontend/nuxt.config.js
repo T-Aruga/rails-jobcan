@@ -62,6 +62,14 @@ const config = {
   generate: {
     dir: '../public'
   },
+
+  env: {
+    APP_NAME: process.env.npm_package_name
+  },
+
+  css: [
+    '@/assets/css/main.scss'
+  ],
   /*
   ** Build configuration
   */
