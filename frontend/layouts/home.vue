@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <Header />
+    <v-content>
+     ようこそjobcanへ！！
+    </v-content>
     このページはログイン前のレイアウト「home.vue」が使用されています。
-    <nuxt-link to="/login">
-      ログインする
-    </nuxt-link>
     <Footer />
   </v-app>
 </template>
