@@ -52,20 +52,9 @@ export default {
     }
   },
   methods: {
-    async loginWithAuthModule () {
-      await this.$auth.loginWith('local', {
-        data: {
-          email: this.email,
-          password: this.password
-        }
-      })
-        .then((response) => {
-          return response
-        },
-        (error) => {
-          return error
-        })
-    }
+    // login () {
+    //   this.$axios.post('/api/v1/sign_in').then(res => (this.msg = res.msg))
+    // }
   }
 }
 </script>

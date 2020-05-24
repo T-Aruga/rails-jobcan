@@ -53,11 +53,10 @@ const config = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/proxy'	,
-    '@nuxtjs/auth'
   ],
 
   plugins: [
-    'plugins/vuetify'
+    'plugins/vuetify',
   ],
 
   generate: {
@@ -74,33 +73,33 @@ const config = {
     }
   },
 
-  auth: {
-    redirect: {
-      login: '/login',
-      logout: '/login',
-      callback: false,
-      home: '/'
-    },
-    strategies: {
-      local: {
-        endpoints: {
-          login: { url: '/auth/login', method: 'post', propertyName: false },
-          logout: false,
-          user: false
-        }
-      }
-    }
-  },
+  // auth: {
+  //   redirect: {
+  //     login: '/login',
+  //     logout: '/login',
+  //     callback: false,
+  //     home: '/'
+  //   },
+  //   strategies: {
+  //     local: {
+  //       endpoints: {
+  //         login: { url: '/api/v1/auth/sign_in', method: 'post', propertyName: false },
+  //         logout: false,
+  //         user: false
+  //       }
+  //     }
+  //   }
+  // },
 
-  router: {
-    middleware: ['auth']
-  }
+  // router: {
+  //   middleware: ['auth']
+  // }
 }
 
 if (process.env.NODE_ENV === 'development') {
   config.buildModules.push('@nuxtjs/eslint-module')
   config.axios = { baseURL: 'http:localhost:3000' }
-  config.proxy = { '/api': 'http://localhost:3000', '/auth': 'http://localhost:3000' }
+  config.proxy = { '/api': 'http://localhost:3000' }
 }
 
 export default config

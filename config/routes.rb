@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     end
   end
 
-  post 'auth/login', to: 'users#login'
+  # post 'auth/login', to: 'users#login'
 end
