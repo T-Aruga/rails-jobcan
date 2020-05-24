@@ -37,7 +37,6 @@ const config = {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
   ],
   /*
@@ -48,6 +47,7 @@ const config = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: process.env.BASE_URL	|| '/'
   },
 
   modules: [
@@ -75,6 +75,7 @@ const config = {
 }
 
 if (process.env.NODE_ENV === 'development') {
+  config.devModules.push('@nuxtjs/eslint-module')
   config.proxy = { '/api': 'http://localhost:3000' }
 }
 
