@@ -20,3 +20,4 @@ https://rails-jobcan.herokuapp.com/
 * SASS, vuetify
 
 ## 画面サンプル
+[![Image from Gyazo](https://i.gyazo.com/8715f02953be59dcdefffe6a7ade9179.png)](https://gyazo.com/8715f02953be59dcdefffe6a7ade9179)
